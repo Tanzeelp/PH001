@@ -5,11 +5,9 @@ class info
     int balance=10000,o,withdraw,deposit;
     int id;
     public:
-    
-    int i=true;
-    while(i)
-    {
         void get()
+        {
+            while(true)
         {
             cout<<endl<<"Enter the ID :";
             cin>>id;
@@ -47,11 +45,8 @@ class info
                     balance=balance+deposit;
                     cout<<endl<<"Balance :"<<balance;
                 }
-                
-
+                break;
             }
-
-
         }
     }
 };
