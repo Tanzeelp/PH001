@@ -5,8 +5,8 @@ class info
     int balance=10000,o,withdraw,deposit;
     int id;
     public:
-        void get()
-        {
+    void get()
+    {
             while(true)
         {
             cout<<endl<<"Enter the ID :";
@@ -15,6 +15,7 @@ class info
             cout<<endl<<"1 : Check Balance";
             cout<<endl<<"2 : Withdraw Money";
             cout<<endl<<"3 : Deposit Money";
+            cout<<endl<<"4 : Exit";
             cout<<endl<<"Select One Option : ";
             cin>>o;
             switch(o)
@@ -46,9 +47,14 @@ class info
                     cout<<endl<<"Balance :"<<balance;
                 }
                 break;
+
+                case 4:
+                cout<<endl<<"Exit";
+                return;
             }
         }
     }
+    
 };
 int main()
 {
